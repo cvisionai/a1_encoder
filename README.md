@@ -1,23 +1,29 @@
 # Pulling image
 
-docker pull cvisionai/a1_encoder
+```sh
+$> docker pull cvisionai/a1_encoder
+```
 
 # Building image
 
-docker build -t cvisionai/a1_encoder .
+```sh
+$> docker build -t cvisionai/a1_encoder .
+```
 
 # Running image:
+```sh
+$>docker run --rm -ti cvisionai/a1_encoder
 
-docker run --rm -ti cvisionai/a1_encoder
-
-## Testing image
-$docker> ./test.sh
+# Then testing the image: 
+$> ./test.sh
+```
 
 ## Version Notes:
 
-*-------------*---------------------------------*
 | Docker/tag  | Description                     |
-*-------------*---------------------------------*
+| ----------- | :------------------------------ |
 | v0.0.1      | Stable release                  |
-*-------------*---------------------------------*
+| v0.0.2      | - Add av1 support, bento4 executables
+
+
 
